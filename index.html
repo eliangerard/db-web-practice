@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./helper.js"></script>
+    <script src="./register.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700;900&family=Montserrat:wght@900&family=Mulish:wght@400;700;900&family=Palanquin:wght@400;700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Donas</h1>
+    <div id="registro">
+        <img src="./src/cct.png" alt="">
+        <div id="datosContainer">
+            <div id="datos">
+                <h2>Inicio de Sesión</h2>
+
+                <div id="registerName">
+                    <div class="regContainer">
+                        <p class="label">Nombre(s)</p>
+                        <input id="names" type="text">
+                    </div>
+                    <div class="regContainer">
+                        <p class="label">Apellidos</p>
+                        <input id="lastnames" type="text">
+                    </div>
+                </div>
+
+                <p class="label">Correo</p>
+                <input id="email" type="email">
+
+                <p class="label">Contraseña</p>
+                <input id="password" type="password">
+                <button onclick="signIn()">Iniciar sesión</button>
+                <p id="doyou">¿No tienes una cuenta? <b onclick="openRegister()">Regístrate</b></p>
+            </div>
+        </div>
+    </div>
+    <p id="toast"></p>
+</body>
+</html>
