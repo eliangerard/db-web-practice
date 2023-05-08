@@ -113,7 +113,7 @@ button:hover {
     width: 0;
     bottom: 0;
     left: 50%;
-    height: 1rem;
+    height: 0;
     text-align: center;
     background-color: var(--light-accent);
     padding: 0;
@@ -123,3 +123,24 @@ button:hover {
     transform: translateX(-50%);
     transition: padding 150ms, width 150ms, height 150ms;
 }
+
+@media screen and (max-width: 900px) {
+    body, html {
+        height: auto;
+    }
+    #registro {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #datosContainer {
+        width: 100%;
+    }
+    #datos {
+        margin: 0;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+  

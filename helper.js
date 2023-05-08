@@ -83,7 +83,7 @@ const signIn = () => {
         .catch(error => console.error(error));
 }
 //Método para mostrar el mensaje que regresa el PHP de inicio de sesión y el de registro
-const showToast = (message) => {
+const showToast = async (message) => {
     const toast = document.getElementById("toast");
     toast.innerHTML = message;
     toast.style.width = "fit-content";
@@ -92,6 +92,9 @@ const showToast = (message) => {
         toast.style.width = "0";
         toast.style.padding = "0";
         toast.style.height = "0";
+        setTimeout(() => {
+            toast.style.height = "fit-content";
+        }, 150);
     }, 5000);
 }
 
